@@ -18,8 +18,7 @@ class Application
         resp.write "#{cart_item}\n"
       end
     elsif req.path.match(/add/)
-      req.params["item"]
-      
+       @@cart << req.params["item"]
     else
       resp.write "Path Not Found"
     end
