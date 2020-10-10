@@ -22,6 +22,7 @@ class Application
          end
        end
     elsif req.path.match(/add/)
+       if 
        @@cart << req.params["item"]
     else
       resp.write "Path Not Found"
